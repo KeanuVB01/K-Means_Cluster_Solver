@@ -4,6 +4,8 @@ namespace K_Means_Clustering_Solver
     {
         double[,] datapoints = new double[20,2];
         int count = 0;
+        bool c1 = false, c2 = false, c1Used = false, c2Used = false;
+        int c1Position, c2Position;
         public Form1()
         {
             InitializeComponent();
@@ -11,6 +13,27 @@ namespace K_Means_Clustering_Solver
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            
+            if (cbxC1.Checked==true && !c1Used) 
+            { 
+                c1= true; 
+            }
+            else if (cbxC1.Checked == true && c1Used)
+            {
+                MessageBox.Show("Centroid 1 already assigned");
+                return;
+            }
+
+            if (cbxC2.Checked==true && !c2Used) 
+            { 
+                c2= true; 
+            }
+            else if (cbxC2.Checked == true && c2Used)
+            {
+                MessageBox.Show("Centroid 2 already assigned");
+                return;
+            }
+
             try
             {
                 double x = double.Parse(txtXPoint.Text);
@@ -19,12 +42,28 @@ namespace K_Means_Clustering_Solver
                 datapoints[count,0] = x;
                 datapoints[count,1] = y;
 
+                if (c1 && !c1Used) { c1Position = count;}
+                if (c2 && !c2Used) { c2Position = count;}
+
                 count++;
 
                 lblCurrent.Text = "Current: "+count.ToString();
-                lbxPoints.Items.Add(count.ToString() + ")  ("+x.ToString()+";"+y.ToString()+")");
 
+                if (c1 && !c1Used)
+                {
+                    lbxPoints.Items.Add(count.ToString() + ") C1 (" + x.ToString() + ";" + y.ToString() + ")");
+                }
+                else if (c2 && !c2Used)
+                {
+                    lbxPoints.Items.Add(count.ToString() + ") C2 (" + x.ToString() + ";" + y.ToString() + ")");
+                }
+                else
+                {
+                    lbxPoints.Items.Add(count.ToString() + ")  (" + x.ToString() + ";" + y.ToString() + ")");
+                }
 
+                if (c1) { c1Used = true; }
+                if (c2) { c2Used = true; }
             }
             catch ( FormatException fm)
             {
@@ -40,6 +79,8 @@ namespace K_Means_Clustering_Solver
             if (count >= 2) { btnSolve.Enabled = true; }
             txtXPoint.Clear();
             txtYPoint.Clear();
+            cbxC1.Checked = false;
+            cbxC2.Checked = false;
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -52,6 +93,12 @@ namespace K_Means_Clustering_Solver
             txtYPoint.Clear();
             btnAdd.Enabled = true;
             btnSolve.Enabled = false;
+            cbxC1.Checked = false;
+            cbxC2.Checked = false;
+            c1Used=false;
+            c2Used=false;
+            c1=false;
+            c2=false;
 
             for (int i=0;i<=count;i++)
             {
@@ -75,10 +122,33 @@ namespace K_Means_Clustering_Solver
             Double[] c1 = new double[2];
             Double[] c2 = new double[2];
 
-            c1[0] = datapoints[0, 0];
-            c1[1] = datapoints[0, 1];
-            c2[0] = datapoints[1, 0];
-            c2[1] = datapoints[1, 1];
+            if (c1Used)
+            {
+                c1[0] = datapoints[c1Position, 0];
+                c1[1] = datapoints[c1Position, 1];
+            }
+            else
+            {
+                c1[0] = datapoints[0, 0];
+                c1[1] = datapoints[0, 1];
+            }
+            
+            if (c2Used) 
+            {
+                c2[0] = datapoints[c2Position, 0];
+                c2[1] = datapoints[c2Position, 1];
+            }
+            else
+            {
+                c2[0] = datapoints[1, 0];
+                c2[1] = datapoints[1, 1];
+
+                if ((c2[0] == c1[0]) && (c2[1] == c1[1]))
+                {
+                    MessageBox.Show("Error, Centroid 1 = Centroid 2");
+                }
+            }
+            
 
 
             //0=x-axis 1=y-axis
@@ -251,6 +321,22 @@ namespace K_Means_Clustering_Solver
             rtxtOutput.AppendText("\nc1 = " + c1[0].ToString() + ";" + c1[1]);
             rtxtOutput.AppendText("\nc2 = " + c2[0].ToString() + ";" + c2[1]);
 
+        }
+
+        private void cbxC2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbxC2.Checked == true)
+            {
+                cbxC1.Checked= false;
+            }
+        }
+
+        private void cbxC1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbxC1.Checked == true)
+            {
+                cbxC2.Checked = false;
+            }
         }
     }
 }

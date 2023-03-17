@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K_Means_Clustering Solver\\K_Means_Clustering Solver.csproj": {}
+    "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K-Means_Cluster_Solver\\K_Means_Clustering Solver.csproj": {}
   },
   "projects": {
-    "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K_Means_Clustering Solver\\K_Means_Clustering Solver.csproj": {
+    "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K-Means_Cluster_Solver\\K_Means_Clustering Solver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K_Means_Clustering Solver\\K_Means_Clustering Solver.csproj",
+        "projectUniqueName": "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K-Means_Cluster_Solver\\K_Means_Clustering Solver.csproj",
         "projectName": "K_Means_Clustering Solver",
-        "projectPath": "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K_Means_Clustering Solver\\K_Means_Clustering Solver.csproj",
+        "projectPath": "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K-Means_Cluster_Solver\\K_Means_Clustering Solver.csproj",
         "packagesPath": "C:\\Users\\keanu\\.nuget\\packages\\",
-        "outputPath": "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K_Means_Clustering Solver\\obj\\",
+        "outputPath": "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K-Means_Cluster_Solver\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

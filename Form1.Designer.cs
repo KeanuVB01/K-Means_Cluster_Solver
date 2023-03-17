@@ -32,6 +32,8 @@
             this.btnSolve = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbxC2 = new System.Windows.Forms.CheckBox();
+            this.cbxC1 = new System.Windows.Forms.CheckBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.lblCurrent = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -65,9 +67,9 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(442, 90);
+            this.btnAdd.Location = new System.Drawing.Point(407, 124);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(129, 53);
+            this.btnAdd.Size = new System.Drawing.Size(129, 36);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add Data Point";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -76,6 +78,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.Controls.Add(this.cbxC2);
+            this.panel1.Controls.Add(this.cbxC1);
             this.panel1.Controls.Add(this.btnReset);
             this.panel1.Controls.Add(this.lblCurrent);
             this.panel1.Controls.Add(this.label2);
@@ -91,6 +95,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 250);
             this.panel1.TabIndex = 3;
+            // 
+            // cbxC2
+            // 
+            this.cbxC2.AutoSize = true;
+            this.cbxC2.Location = new System.Drawing.Point(423, 93);
+            this.cbxC2.Name = "cbxC2";
+            this.cbxC2.Size = new System.Drawing.Size(100, 24);
+            this.cbxC2.TabIndex = 13;
+            this.cbxC2.Text = "Centroid 2";
+            this.cbxC2.UseVisualStyleBackColor = true;
+            this.cbxC2.CheckedChanged += new System.EventHandler(this.cbxC2_CheckedChanged);
+            // 
+            // cbxC1
+            // 
+            this.cbxC1.AutoSize = true;
+            this.cbxC1.Location = new System.Drawing.Point(423, 69);
+            this.cbxC1.Name = "cbxC1";
+            this.cbxC1.Size = new System.Drawing.Size(100, 24);
+            this.cbxC1.TabIndex = 12;
+            this.cbxC1.Text = "Centroid 1";
+            this.cbxC1.UseVisualStyleBackColor = true;
+            this.cbxC1.CheckedChanged += new System.EventHandler(this.cbxC1_CheckedChanged);
             // 
             // btnReset
             // 
@@ -136,7 +162,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(76, 133);
+            this.label1.Location = new System.Drawing.Point(32, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 20);
             this.label1.TabIndex = 7;
@@ -146,7 +172,7 @@
             // 
             this.lblX.AutoSize = true;
             this.lblX.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblX.Location = new System.Drawing.Point(75, 69);
+            this.lblX.Location = new System.Drawing.Point(31, 69);
             this.lblX.Name = "lblX";
             this.lblX.Size = new System.Drawing.Size(110, 20);
             this.lblX.TabIndex = 6;
@@ -163,14 +189,14 @@
             // 
             // txtYPoint
             // 
-            this.txtYPoint.Location = new System.Drawing.Point(191, 133);
+            this.txtYPoint.Location = new System.Drawing.Point(147, 133);
             this.txtYPoint.Name = "txtYPoint";
             this.txtYPoint.Size = new System.Drawing.Size(234, 27);
             this.txtYPoint.TabIndex = 4;
             // 
             // txtXPoint
             // 
-            this.txtXPoint.Location = new System.Drawing.Point(191, 69);
+            this.txtXPoint.Location = new System.Drawing.Point(147, 69);
             this.txtXPoint.Name = "txtXPoint";
             this.txtXPoint.Size = new System.Drawing.Size(234, 27);
             this.txtXPoint.TabIndex = 3;
@@ -205,5 +231,7 @@
         private Label lblCurrent;
         private Label label2;
         private Button btnReset;
+        private CheckBox cbxC2;
+        private CheckBox cbxC1;
     }
 }

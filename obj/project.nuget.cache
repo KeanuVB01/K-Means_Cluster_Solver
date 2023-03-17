@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4YdmL1oatd7oMSMILWIRKfaSIbwLq8ubmXHk0tz9+njNkZjE18mowKKkFrHQmFuDNyLn8Uji5rdglx6mxfQTWg==",
+  "dgSpecHash": "kz1V91xnAA8uV4LTdzrBopHCd28cTPByf+4yQKMjvk7+DoNwJabCg7zofJ/Cefv1XDglJI+t9sZbhw3dOtlDvg==",
   "success": true,
-  "projectFilePath": "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K_Means_Clustering Solver\\K_Means_Clustering Solver.csproj",
+  "projectFilePath": "D:\\BC\\3rd Year\\Portfolio\\K_Means Cluster\\K-Means_Cluster_Solver\\K_Means_Clustering Solver.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
