@@ -1,0 +1,17 @@
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\bin\Debug\net6.0-windows\K_Means_Clustering Solver.exe
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\bin\Debug\net6.0-windows\K_Means_Clustering Solver.deps.json
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\bin\Debug\net6.0-windows\K_Means_Clustering Solver.runtimeconfig.json
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\bin\Debug\net6.0-windows\K_Means_Clustering Solver.dll
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\bin\Debug\net6.0-windows\K_Means_Clustering Solver.pdb
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\K_Means_Clustering Solver.csproj.AssemblyReference.cache
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\K_Means_Clustering_Solver.Form1.resources
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\K_Means_Clustering Solver.csproj.GenerateResource.cache
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\K_Means_Clustering Solver.GeneratedMSBuildEditorConfig.editorconfig
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\K_Means_Clustering Solver.AssemblyInfoInputs.cache
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\K_Means_Clustering Solver.AssemblyInfo.cs
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\K_Means_Clustering Solver.csproj.CoreCompileInputs.cache
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\K_Means_Clustering Solver.dll
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\refint\K_Means_Clustering Solver.dll
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\K_Means_Clustering Solver.pdb
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\K_Means_Clustering Solver.genruntimeconfig.cache
+D:\BC\3rd Year\Portfolio\K_Means Cluster\K_Means_Clustering Solver\obj\Debug\net6.0-windows\ref\K_Means_Clustering Solver.dll
